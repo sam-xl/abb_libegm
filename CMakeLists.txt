@@ -11,6 +11,9 @@ endif()
 # package's version.
 project(abb_libegm VERSION ${CMAKE_MATCH_1} LANGUAGES CXX)
 
+find_package(ament_cmake REQUIRED)
+ament_package()
+
 include(GNUInstallDirs)
 
 if(WIN32)
